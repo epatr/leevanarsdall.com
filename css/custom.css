@@ -30,7 +30,9 @@
 .about, .gallery {
 	margin-top: 2em;
 }
-
+.about br {
+	margin-bottom: 20px;
+}
 
 
 @media (max-width: 550px) {
