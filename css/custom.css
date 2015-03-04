@@ -1,9 +1,45 @@
-.container {
-	margin-top: 10px;
+.homepage {
+	margin-top: 3em;
 }
-.header .button {
-	margin-top: 10px;
+.header a {
+	text-decoration: none;
+	color: #222;
 }
 .home-gallery {
 	text-align: center;
+	margin-top: 2em;
+}
+.home-gallery a {
+	text-decoration: none;
+	color: #222;
+}
+.home-gallery a:hover {
+	text-decoration: underline;
+}
+.nav {	
+	text-align: right;
+	margin-top: 8px;
+}
+.gallery {
+
+	margin-bottom: 15px;
+}
+#resume-download {
+	text-align: right;
+}
+.about, .gallery {
+	margin-top: 2em;
+}
+
+
+
+@media (max-width: 550px) {
+
+	.header {
+		text-align: center;
+	}
+	.nav {
+		text-align: center;
+		margin-top: 0;
+	}
 }
