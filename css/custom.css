@@ -1,4 +1,4 @@
-.homepage {
+.homepage, .gallery, .about {
 	margin-top: 3em;
 }
 .header a {
@@ -27,10 +27,6 @@
 #resume-download {
 	text-align: right;
 }
-.about, .gallery {
-	margin-top: 2em;
-}
-
 
 @media (max-width: 550px) {
 
@@ -41,4 +37,9 @@
 		text-align: center;
 		margin-top: 0;
 	}
+}
+
+
+.container h2 {
+	font-family: 'Libre Baskerville', serif;
 }
