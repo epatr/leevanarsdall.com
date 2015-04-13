@@ -2,37 +2,28 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Lee Van Arsdall</title>
+	<title><?php if($title) { echo "$title" . " | "; } ?>Lee Van Arsdall</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 	<link href='//fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
- 	<link rel="stylesheet" href="css/normalize.css">
- 	<link rel="stylesheet" href="css/skeleton.css">
- 	<link rel="stylesheet" href="css/custom.css">
+ 	<link rel="stylesheet" href="/stylesheets/main.css">
  	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="container homepage">
+	<div class="container <?php echo $type; ?>">
 
 		<div class="row header">
 			<div class="six columns">
-				<a href="index.html"><h2>Lee Van Arsdall</h2></a>
+				<a href="/"><h2>Lee Van Arsdall</h2></a>
 			</div>
 			<div class="six columns nav">
-				<a href="street.html">Street</a>
-				<a href="alternative.html">Alternative</a>
-				<a href="about.html">About</a>
+				<a href="/gallery/street" <?php if (($gallery_name == 'street') || ($title == 'Street')) { echo "class=\"primary\"";} ?>>Street</a>
+				<a href="/gallery/alternative" <?php if (($gallery_name == 'alternative') || ($title == 'Alternative')) { echo "class=\"primary\"";} ?>>Alternative</a>
+				<a href="/about" <?php if ($title == 'About') { echo "class=\"primary\"";} ?>>About</a>
 			</div>
 		</div>
 
-		<div class="row home-gallery">
-			<div class="six columns">
-					<img src="images/cover_street.jpg" alt="Street" class="u-max-full-width">
-			</div>
-			<div class="six columns">
-				<img src="images/cover_alternative.jpg" alt="Alternative" class="u-max-full-width">
-			</div>			
-		</div>
+		<?php echo $content; ?>
 
 		<div class="row footer">
 

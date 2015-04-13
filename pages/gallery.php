@@ -1,27 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Alternative | Lee Van Arsdall</title>	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-	<link href='//fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
- 	<link rel="stylesheet" href="css/normalize.css">
- 	<link rel="stylesheet" href="css/skeleton.css">
- 	<link rel="stylesheet" href="css/custom.css">
-</head>
-<body>
-	<div class="container gallery">
-		<div class="row header">
-			<div class="six columns">
-				<a href="index.html"><h2>Lee Van Arsdall</h2></a>
-			</div>
-			<div class="six columns nav">
-				<a href="street.html">Street</a>
-				<a href="alternative.html" class="primary">Alternative</a>
-				<a href="about.html">About</a>
-			</div>
-		</div>
 		<div class="row gallery">
 			<div class="twelve columns"><a href="alternative/1.jpg"><img src="alternative/1.jpg" alt="" class="u-max-full-width"></a></div>
 		</div>
@@ -49,17 +25,4 @@
 			<div class="three columns"><a href="alternative/14.jpg"><img src="alternative/14.jpg" alt="" class="u-max-full-width"></a></div>
 			<div class="three columns"><a href="alternative/15.jpg"><img src="alternative/15.jpg" alt="" class="u-max-full-width"></a></div>
 			<div class="three columns"><a href="alternative/16.jpg"><img src="alternative/16.jpg" alt="" class="u-max-full-width"></a></div>
-		</div>		
-	</div>	
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-60526441-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>	
-</body>
-</html>
+		</div>

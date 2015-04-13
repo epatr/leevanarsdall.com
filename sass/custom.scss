@@ -1,4 +1,4 @@
-.homepage, .gallery, .about {
+.homepage, .gallery, .about, .photo {
 	margin-top: 3em;
 }
 .header a {
@@ -11,20 +11,23 @@
 	text-align: center;
 	margin-top: 2em;
 }
-.home-gallery a {
-	text-decoration: none;
-	color: #222;
-}
-.home-gallery a:hover {
-}
 .nav {	
 	text-align: right;
 	margin-top: 8px;
 }
-.gallery {
-
+.gallery-grid {
+	text-align: center;
 	margin-bottom: 15px;
 }
+.gallery-grid:first-child {
+	margin-top: 2em;
+}
+.photo-view {
+	margin-top: 2em;
+	text-align: center;
+}
+
+
 #resume-download {
 	text-align: right;
 }
@@ -45,6 +48,10 @@
 	font-family: 'Libre Baskerville', serif;
 }
 
+.photo-breadcrumb {
+	margin-top: 2em;
+	text-align: center;
+}
 
 .footer {
 	margin-top: 4em;

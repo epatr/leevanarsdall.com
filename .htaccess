@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# For clean URLs three directories deep
+RewriteRule    ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$    index.php?page=$1&$1=$2&$2=$3    [NC,L]   
+
+# For clean URLs two directories deep
+RewriteRule    ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$    index.php?page=$1&$1=$2    [NC,L]     
+
+# Pass clean URL to a GET header for 'page' on index.php
+RewriteRule    ^([A-Za-z0-9-]+)/?$    index.php?page=$1    [NC,L]

@@ -1,27 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>About | Lee Van Arsdall</title>	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-	<link href='//fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
- 	<link rel="stylesheet" href="css/normalize.css">
- 	<link rel="stylesheet" href="css/skeleton.css">
- 	<link rel="stylesheet" href="css/custom.css">
-</head>
-<body>
-	<div class="container about">
-		<div class="row header">
-			<div class="six columns">
-				<a href="index.html"><h2>Lee Van Arsdall</h2></a>
-			</div>
-			<div class="six columns nav">
-				<a href="street.html" >Street</a>
-				<a href="alternative.html">Alternative</a>
-				<a href="about.html" class="primary">About</a>
-			</div>
-		</div>
 		<div class="row">
 			<div class="twelve columns">
 				<section id="resume-download">
@@ -120,19 +96,5 @@
 		<div class="row">
 			<section class="twelve columns">
 				<p>Daryl Walls, Vice President Operations, Tough Gear Inc.</p>
-				<p>	904.238.4000, daryl@survivalstraps.com</p>
 			</section>
-		</div>		
-	</div>	
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-60526441-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>	
-</body>
-</html>
+		</div>
