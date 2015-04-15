@@ -4,8 +4,6 @@
 	<meta charset="UTF-8">
 	<title><?php if($title) { echo "$title" . " | "; } ?>Lee Van Arsdall</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-	<link href='//fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
  	<link rel="stylesheet" href="/stylesheets/main.css">
  	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
