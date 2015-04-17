@@ -32,7 +32,7 @@ switch ($_GET['page']) {
 				$page->type = "photo";
 				$page->photo_number = $_GET['street'];
 				$page->title = $page->photo_number;
-				$page->title .= " | " . ucfirst($page->gallery_name);
+				$page->title .= " | " . $page->gallery;
 				$page->img_url = $page->gallery_name . "/" . $page->photo_number . ".jpg";
 				$page->content = $page->render('pages/view_photo.php');
 			} else {
@@ -46,7 +46,7 @@ switch ($_GET['page']) {
 				$page->type = "photo";
 				$page->photo_number = $_GET['alternative'];
 				$page->title = $page->photo_number;
-				$page->title .= " | " . ucfirst($page->gallery_name);
+				$page->title .= " | " . $page->gallery;
 				$page->img_url = $page->gallery_name . "/" . $page->photo_number . ".jpg";
 				$page->content = $page->render('pages/view_photo.php');
 			} else {
@@ -60,10 +60,11 @@ switch ($_GET['page']) {
 				$page->type = "photo";
 				$page->photo_number = $_GET['fractured-time'];
 				$page->title = "$page->photo_number";
-				$page->title .= " | " . ucfirst($page->gallery_name);
+				$page->title .= " | " . $page->gallery;
 				$page->img_url = $page->gallery_name . "/" . $page->photo_number . ".jpg";
 				$page->content = $page->render('pages/view_photo.php');
 			} else {
+				$page->title = "Fractured Time";
 				$page->content = $page->render('pages/gallery-fractured_time.php');
 			}
 		}
