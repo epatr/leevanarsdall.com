@@ -1,3 +1,17 @@
+
+// Center the logo and menu on small screens
+
+@media (max-width: 550px) {
+
+	.header {
+		text-align: center;
+	}
+	.nav {
+		text-align: center;
+		margin-top: 0;
+	}
+}
+
 .homepage, .gallery, .about, .photo {
 	margin-top: 3em;
 }
@@ -30,17 +44,6 @@
 
 #resume-download {
 	text-align: right;
-}
-
-@media (max-width: 550px) {
-
-	.header {
-		text-align: center;
-	}
-	.nav {
-		text-align: center;
-		margin-top: 0;
-	}
 }
 
 
