@@ -1,4 +1,4 @@
-	<h2>Street</h2>
+	<h3>Street</h3>
 
 	<div class="photo-gallery">
 		<div class="row gallery-grid">
