@@ -1,6 +1,17 @@
 # [leevanarsdall.com](http://leevanarsdall.com)
 
-A portfolio site for photographer Lee Van Arsdall. Originally built in static HTML with the Skeleton framework in March 2015. Rebuilt with PHP and clean URLs in April 2015.
+A portfolio site for photographer Lee Van Arsdall. 
+
+
+##Changelog
+
+### April 2015
+
+Rebuilt with a PHP template and clean URLs. Began moving code over to Sass. 
+
+### March 2015
+
+Built static HTML with Skeleton framework. 
 
 
 ## Technologies Used
