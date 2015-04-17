@@ -28,6 +28,7 @@ switch ($_GET['page']) {
 			// Then, check to see if a number exists in the URL, if so, display an image instead of a gallery
 			if ($_GET['street']) {
 				// All of this stuff is just duplicated again under 'alternative' -- come up with a better way to do this! DRY!
+				$page->gallery = "Street";
 				$page->type = "photo";
 				$page->photo_number = $_GET['street'];
 				$page->title = $page->photo_number;
@@ -40,6 +41,7 @@ switch ($_GET['page']) {
 		}
 
 		if ($page->gallery_name == 'alternative') {
+			$page->gallery = "Alternative";
 			if ($_GET['alternative']) {
 				$page->type = "photo";
 				$page->photo_number = $_GET['alternative'];
@@ -53,10 +55,11 @@ switch ($_GET['page']) {
 		}
 
 		if ($page->gallery_name == 'fractured-time') {
+			$page->gallery = "Fractured Time";
 			if ($_GET['fractured-time']) {
 				$page->type = "photo";
 				$page->photo_number = $_GET['fractured-time'];
-				$page->title = $page->photo_number;
+				$page->title = "$page->photo_number";
 				$page->title .= " | " . ucfirst($page->gallery_name);
 				$page->img_url = $page->gallery_name . "/" . $page->photo_number . ".jpg";
 				$page->content = $page->render('pages/view_photo.php');
