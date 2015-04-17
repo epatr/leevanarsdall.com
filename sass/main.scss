@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Raleway:400,300,600);
+@import url(//fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900);
 @import url(//fonts.googleapis.com/css?family=Libre+Baskerville);
     
 @import "normalize";
@@ -93,8 +93,16 @@
 	color: #BC2323;
 }
 
-
+ul.contact {
+	list-style: none;
+}
 .pdflink { 
    padding-right: 18px;
    background: transparent url(/images/pdf.gif) no-repeat center right;
+}
+
+
+h3 { 
+	font-size: 2.5rem;
+	font-weight: 500;
 }
