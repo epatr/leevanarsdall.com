@@ -22,7 +22,9 @@
 			</div>
 		</div>
 
-		<?php echo $content; ?>
+		<div class="row">
+			<?php echo $content; ?>
+		</div>
 
 		<div class="row footer">
 
