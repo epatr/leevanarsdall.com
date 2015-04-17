@@ -24,7 +24,7 @@ switch ($_GET['page']) {
 
 		// It's embarassing that you code this poorly. This was a quick workaround because I wanted the URls to fall down gracefully,
 		// e.g. /gallery/ /gallery/street/ /gallery/street/3/. There HAS to be a better way to do this though. Break apart the URL by slashes?
-		if ($page->gallery_name == 'street') { 				
+		if ($page->gallery_name == 'street') {
 			// Then, check to see if a number exists in the URL, if so, display an image instead of a gallery
 			if ($_GET['street']) {
 				// All of this stuff is just duplicated again under 'alternative' -- come up with a better way to do this! DRY!
@@ -38,6 +38,7 @@ switch ($_GET['page']) {
 				$page->content = $page->render('pages/gallery-street.php');
 			}
 		}
+
 		if ($page->gallery_name == 'alternative') {
 			if ($_GET['alternative']) {
 				$page->type = "photo";
@@ -47,9 +48,23 @@ switch ($_GET['page']) {
 				$page->img_url = $page->gallery_name . "/" . $page->photo_number . ".jpg";
 				$page->content = $page->render('pages/view_photo.php');
 			} else {
-				$page->content = $page->render('pages/gallery-alternative.php');			
+				$page->content = $page->render('pages/gallery-alternative.php');
 			}
 		}
+
+		if ($page->gallery_name == 'fractured-time') {
+			if ($_GET['fractured-time']) {
+				$page->type = "photo";
+				$page->photo_number = $_GET['fractured-time'];
+				$page->title = $page->photo_number;
+				$page->title .= " | " . ucfirst($page->gallery_name);
+				$page->img_url = $page->gallery_name . "/" . $page->photo_number . ".jpg";
+				$page->content = $page->render('pages/view_photo.php');
+			} else {
+				$page->content = $page->render('pages/gallery-fractured_time.php');
+			}
+		}
+
 		break;
 
 
@@ -59,7 +74,13 @@ switch ($_GET['page']) {
 		$page->content = $page->render('pages/about.php');
 		break;
 
-	
+	case 'resume':
+		$page->type = "about";
+		$page->title = "Resume";
+		$page->content = $page->render('pages/resume.php');
+		break;
+
+
 	default:
 		$page->type = "homepage";
 		$page->content = $page->render('pages/homepage.php');
