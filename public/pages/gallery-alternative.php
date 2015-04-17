@@ -1,4 +1,6 @@
-	<div class="gallery">
+
+<h2>Alternative</h2>
+	<div class="photo-gallery">
 		<div class="row gallery-grid">
 			<div class="twelve columns"><a href="/gallery/alternative/1"><img src="/images/galleries/alternative/1.jpg" alt="" class="u-max-full-width"></a></div>
 		</div>
