@@ -11,10 +11,11 @@
 	<div class="container <?php echo $type; ?>">
 
 		<div class="row header">
-			<div class="six columns">
-				<a href="/"><h2>Lee Van Arsdall</h2></a>
+			<div class="five columns">
+				<a href="/"><h1>Lee Van Arsdall</h1></a>
 			</div>
-			<div class="six columns nav">
+			<div class="seven columns nav">
+				<a href="/gallery/fractured-time" <?php if (($gallery_name == 'fractured-time') || ($title == 'Fractured Time')) { echo "class=\"primary\"";} ?>>Fractured Time</a>
 				<a href="/gallery/street" <?php if (($gallery_name == 'street') || ($title == 'Street')) { echo "class=\"primary\"";} ?>>Street</a>
 				<a href="/gallery/alternative" <?php if (($gallery_name == 'alternative') || ($title == 'Alternative')) { echo "class=\"primary\"";} ?>>Alternative</a>
 				<a href="/about" <?php if ($title == 'About') { echo "class=\"primary\"";} ?>>About</a>
