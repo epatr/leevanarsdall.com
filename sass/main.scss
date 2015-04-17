@@ -39,7 +39,7 @@
 
 
 
-.homepage, .gallery, .about, .photo {
+.homepage, .gallery, .about, .photo, .statement {
 	margin-top: 3em;
 }
 
@@ -48,7 +48,7 @@
 	margin-bottom: 15px;
 }
 .gallery-grid:first-child {
-	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 .photo-view {
@@ -91,4 +91,10 @@
 }
 .nav .primary {
 	color: #BC2323;
+}
+
+
+.pdflink { 
+   padding-right: 18px;
+   background: transparent url(/images/pdf.gif) no-repeat center right;
 }
