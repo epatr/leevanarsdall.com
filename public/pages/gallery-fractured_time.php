@@ -3,7 +3,7 @@
 <h3>Fractured Time</h3>
 
 	<div class="twelve columns">
-		<p>Fractured time focuses on the construction and deconstruction of fabricated realities. Working like a painter, I merge individual elements to create surreal and ethereal visual narratives. I composite /images from multiple moments in time to create pictures that challenge how photographs are made and function as pictures. These tableaus question the static notion of time in a photograph and the insistence that photographs are necessarily transcriptions of reality.</p>
+		<p>Fractured time focuses on the construction and deconstruction of fabricated realities. Working like a painter, I merge individual elements to create surreal and ethereal visual narratives. I composite images from multiple moments in time to create pictures that challenge how photographs are made and function as pictures. These tableaus question the static notion of time in a photograph and the insistence that photographs are necessarily transcriptions of reality.</p>
 	</div>
 
 </div>
